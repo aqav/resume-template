@@ -1,0 +1,147 @@
+% !TEX program = xelatex
+% This file is generated, don't manually edit!
+\documentclass{resume}
+\usepackage{linespacing_fix}
+\begin{document}
+\name{Tesla Ice Zhang}
+\basicInfo{
+\email{ice1000kotlin@foxmail.com}\textperiodcentered\
+\github[ice1000]{https://github.com/ice1000}\textperiodcentered\
+\homepage[ice1000.org]{https://ice1000.org}\textperiodcentered\
+\linkedin[ice1000]{https://www.linkedin.com/in/ice1000}
+}
+\section{Education}
+\datedsubsection{\textbf{The Pennsylvania State University}, PA, US}{08/2018 -- Present}
+Major: Computer Science (Undergraduate), Anticipated Date of Graduation:
+01/2023
+GPA 3.23/4.00
+\section{Work Experience}
+\datedsubsection{\textbf{JetBrains Research}, Remote}{01/2020 -- 12/2020}
+\role{HoTT and Dependent Types}{Arend Team Intern}
+\begin{itemize}[parsep=0.25ex]
+\item Used features like gradle composite build and buildSrc to reduce build time and improve automation.
+\item Improved the language/IDE, such as sections, hygiene macros, optimized \texttt{Fin} type, semantic highlighting, etc.
+\item Created an extensible REPL framework, provided implementations in CLI (with contextual completion) and in IntelliJ IDEA (interacts with the opened project, supports completion, highlighting and goto definition).
+\item Designed and implemented an expression type-checking debugger that supports step-into and displays local context and expressions as stack frames.
+\end{itemize}
+\datedsubsection{\textbf{PLCT Lab}, Remote}{12/2020 -- Present}
+\role{Implementation of Dependent Types}{Types team lead}
+\begin{itemize}[parsep=0.25ex]
+\item Leading the types team to explore modern techniques in dependent type implementation, such as pattern unification of implicit variables, type checking of pattern matching, termination check of recursive definitions, etc.
+\end{itemize}
+\datedsubsection{\textbf{PingCAP Inc.}, Remote}{08/2018 -- 08/2019}
+\role{Distributed Storage Systems}{TiKV Intern - Ecosystem Team}
+\begin{itemize}[parsep=0.25ex]
+\item Improved many TiKV-relevant libraries, like optimizing the performance of \href{https://docs.rs/crate/grpcio} {grpcio}, adding new features to \href{https://docs.rs/crate/procinfo} {procinfo}.
+\item Helped to migrate the Protocol-Buffer library used by TiKV and its Raft implementation.
+\item Learned a lot about Rust programming, distributed system, working remotely, and databases.
+\end{itemize}
+\datedsubsection{\textbf{Sourcebrella Inc. (now Ant Financial Code Insight)}, Shenzhen, China}{02/2018 -- 07/2018}
+\role{Static Analysis}{Developer Intern}
+\begin{itemize}[parsep=0.25ex]
+\item Created IntelliJ/CLion/Eclipse plugin for the Pinpoint analyzer. Co-worked on the SonarQube plugin.
+\item Created a multi-threading cross Java/Kotlin source code indexer which can index Hadoop within 4 minutes.
+\item Learned a lot about Linux programming and the Clang/LLVM codebase.
+\end{itemize}
+\section{Personal Projects}
+\datedsubsection{\textbf{DevKt}}{\url{https://github.com/ice1000/dev-kt}}
+Cross-platform lightweight code editor / Kotlin IDE
+\begin{itemize}[parsep=0.25ex]
+\item Built-in Java/Kotlin highlights and completion, that can support other languages
+via plugins (transplantable from JetBrains IDE's).
+Has extra build \& run support for Kotlin.
+\item Provides fine-grained highlight color and keymap settings, supports hot reload.
+\end{itemize}
+\datedsubsection{\textbf{Voile}}{\url{https://github.com/owo-lang/voile-rs}}
+Experimental dependently-typed language with kind-based row-polymorphism
+\begin{itemize}[parsep=0.25ex]
+\item Supports meta variable unification and non-dependent row-polymorphic sum and product type.
+\item Supports cumulative universe and typical ambiguity to get rid of Set$\omega$.
+\end{itemize}
+\datedsubsection{\textbf{Aya}}{\url{https://github.com/aya-prover/aya-dev}}
+Practical implementation of a dependent type system (role: project leader)
+\begin{itemize}[parsep=0.25ex]
+\item Supports dependent types, dependent pattern matching with confluence check for overlapping cases, higher inductive types, GADTs, and implicit arguments.
+\item Supports visualization of the type checking traces and exporting elaboration result to HTML or LaTeX.
+\end{itemize}
+\datedsubsection{\textbf{IntelliJ Pest}}{\url{https://github.com/pest-parser/intellij-pest}}
+A Pest grammar language plugin for IDEs based on the IntelliJ Platform
+\begin{itemize}[parsep=0.25ex]
+\item Semantic-based highlighting, completion, navigation, definition extraction/inlining, and Rust plugin integration.
+\item Provides live preview -- test grammar files by dynamically highlighting user code according to the grammar on the fly. These highlighted code could be exported to HTML.
+\end{itemize}
+\datedsubsection{\textbf{External tactics for Agda}}{\url{https://github.com/ice1000/agda-mode}}
+A REPL interacts with Agda CLI interface, simulating Ltac in Coq.
+Supports most actions available in the Emacs mode, like case-split, show expression and goal type, etc.,
+implements IO via tokio and serde along with the required json interface in Agda compiler.
+
+\datedsubsection{\textbf{JImgui}}{\url{https://github.com/ice1000/jimgui}}
+Java port of \textit{dear imgui} implemented in JNI, with FFI code generated by custom tool.
+Optimized JNI performance using the \textit{Critical Native} feature of the HotSpot VM,
+Supports auto-load built-in native libraries for mainstream platforms,
+implements image loading and window scaling apart from the vanilla imgui library.
+
+\datedsubsection{\textbf{Arend IO}}{\url{https://github.com/ice1000/arend-io}}
+Experimental IO library for Arend, implements \textsf{unsafePerformIO} and simple \textsf{IO} actions.
+\datedsubsection{\textbf{VSCode extension for Arend}}{\url{https://github.com/ice1000/vscode-arend}}
+VSCode language client for the Arend language, build on top of the experimental implementation of the Arend language server. Available from the VSCode extension marketplace.
+\datedsubsection{\textbf{Arend language server}}{\url{https://github.com/ice1000/arend-language-server}}
+An experimental implementation of the Arend language server, based on the lsp4j framework and Arend compiler's internal interfaces.
+\section{Skills}
+\begin{itemize}[parsep=0.25ex]
+\item
+\textbf{Program Language}:
+\textbf{multilingual} (not limited to any specific language),
+especially experienced in Java Kotlin Rust C\# Agda Haskell Arend,
+comfortable with Dart C C++ F\# F$\star$ Idris Perl (in random order).
+\item
+\textbf{Compiler}:
+understand various program representations such as CFG, ANF, (P)HOAS, etc.
+Familiar with most parser generators, understand layout syntax parsing.
+\item \textbf{Kotlin/Java}:
+\textbf{4 years} of experience,
+\textbf{4} projects collected in \href{https://kotlin.link/?q=ice} {Awesome Kotlin},
+familiar with JNI, Gradle, and Swing, understand Contract DSL and Kotlin coroutines,
+did some code analysis with Kotlin's compiler.
+\item
+\textbf{Type Theory}:
+understand Martin-L\"{o}f type theory, coinduction, Homotopy type theory and Cubical type theory,
+familiar with Idris, Agda (\textbf{3 years} of experience, contributor),
+F$\star$, Arend (prior member) and some Coq.
+\item \textbf{JetBrains MPS}:
+understand concepts and applications of \textbf{Language-Oriented Programming}.
+\item
+\textbf{IDE Tooling}:
+\textbf{3 years} of experience,
+familiar with the IntelliJ Platform infrastructure (created \href{https://plugins.jetbrains.com/plugin/10413} {Julia}, \href{https://plugins.jetbrains.com/plugin/12176} {DTLC}, \href{https://plugins.jetbrains.com/plugin/12046} {Pest}, etc.), also have experience with Eclipse/SonarQube/VSCode plugin development.
+\item
+\textbf{Mobile Development}:
+\textbf{2 years} of experience,
+Android (Java, Kotlin (Anko)), Flutter
+\item
+\textbf{Development Tool}:
+can adapt to any editors/OSs, usually use JetBrains IDEs and Emacs under
+Ubuntu, have experience with team collaboration tools like 
+YouTrack, Jira, GitHub, BitBucket, Coding.net, Tower, Slack, JetBrains Space.
+\end{itemize}
+\section{Miscellaneous}
+\begin{itemize}[parsep=0.25ex]
+\item Bintray profile: \url{https://bintray.com/ice1000}, for publishing useful JVM libraries
+\item Crates.io profile: \url{https://crates.io/users/ice1000}, for publishing interesting Rust libraries
+\item IntelliJ Plugin developer profile: \url{https://plugins.jetbrains.com/author/10a216dd-c558-4aaf-aa8a-723f431452fb}
+\item Research profile: \url{https://personal.psu.edu/yqz5714}
+\item Languages: English - fluent (TOEFL 100), Chinese - native speaker
+\item Opensource Contributions: \url{https://ice1000.org/opensource-contributions}
+\\ member of \textsf{JuliaEditorSupport, agda, pest-parser, EmmyLua, arend-lang} and more,
+contributed to \textsf{agda, Arend, KaTeX, shields.io, grpc-rs, intellij-solidity, intellij-haskell, intellij-rust, TeXiFy-IDEA, rust-analyzer} and other projects
+(apart from organization ones)
+\item StackOverflow: \url{https://tinyurl.com/y5cmw3dz}
+5000+ reputations, also active on \href{https://stackexchange.com/users/9532102}{other StackExchange sites}
+\item Latest one-page version of this resume: \url{https://tinyurl.com/y8xdlfug}
+\item Latest complete version of this resume: \url{https://tinyurl.com/y2v59t36}
+\item Get the Chinese version of this resume: \url{https://tinyurl.com/ya4urea8}
+\item \textbf{1 dan} on \href{https://www.codewars.com/users/ice1000}{CodeWars},
+ranked \#59 on the whole site (Top 0.021\%),
+solving and making new problems primarily in Haskell, Agda and Idris
+\end{itemize}
+\end{document}
